@@ -1,0 +1,34 @@
+type ServiceInterest = 
+ variant {
+   accessories;
+   cloud;
+   computers;
+   networking;
+   other;
+ };
+type ContactInquiryInput = 
+ record {
+   company: text;
+   email: text;
+   message: text;
+   name: text;
+   phone: text;
+   serviceInterest: ServiceInterest;
+ };
+type ContactInquiry = 
+ record {
+   company: text;
+   email: text;
+   id: ContactId;
+   message: text;
+   name: text;
+   phone: text;
+   serviceInterest: ServiceInterest;
+   submittedAt: int;
+ };
+type ContactId = nat;
+service : {
+  getContactInquiry: (id: ContactId) -> (opt ContactInquiry);
+  listContactInquiries: () -> (vec ContactInquiry);
+  submitContactInquiry: (input: ContactInquiryInput) -> (ContactId);
+}

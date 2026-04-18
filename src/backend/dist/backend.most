@@ -1,0 +1,27 @@
+// Version: 1.0.0
+type ContactId__246256953 = Nat;
+type ContactInquiry__762096662 =
+  {
+    company : Text;
+    email : Text;
+    id : ContactId__246256953;
+    message : Text;
+    name : Text;
+    phone : Text;
+    serviceInterest : ServiceInterest__35501641;
+    submittedAt : Int
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type ServiceInterest__35501641 =
+  {#accessories; #cloud; #computers; #networking; #other};
+actor {
+  stable inquiries :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactInquiry__762096662]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextInquiryId : {var value : Nat};
+  stable var nextInquiryIdValue : Nat
+};

@@ -1,0 +1,24 @@
+{
+  "overview": "A professional IT company website showcasing computer & accessories retail, cloud solutions, and networking services. Features service offerings, product highlights, company strengths, and a contact inquiry form.",
+  "features": [
+    "Sticky navigation header with logo and menu",
+    "Hero section with headline and call-to-action",
+    "Service categories: Computers & Accessories, Cloud Solutions, Networking",
+    "Featured product showcase grid",
+    "Why Choose Us section",
+    "Contact inquiry form with validation",
+    "Responsive mobile, tablet, and desktop layout",
+    "Professional footer with links"
+  ],
+  "category": "business",
+  "tags": [
+    "it-company",
+    "business",
+    "technology",
+    "cloud",
+    "networking",
+    "computers",
+    "corporate-website"
+  ],
+  "last_updated": "2026-04-18T07:16:28.044Z"
+}
